@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir este site em diversos dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="fotos flexíveis">
+
+        <h1>Reproduzindo áudios</h1>
+        <p>vamos colocar alguns áudios para serem reproduzidos neste site</p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/cara-de-pedra.mp3" type="audio/mpeg">
+            <source src="midia/cara-de-pedra (online-audio-converter.com).ogg" type="audio/ogg">
+            <source src="midia/cara-de-pedra (online-audio-converter.com).wav" type="audio/wav">
+            <p>infelizmente seu nagevador não tem suporte a estes áudios, você pode baixar o áduio clicando <a href="midia/cara-de-pedra.mp3"> aqui.</a></p>
+        </audio>
+    </picture>
+</body>
+</html>
